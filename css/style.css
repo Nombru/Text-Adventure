@@ -1,0 +1,30 @@
+.vh{
+  height: 100vh;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.mgn{
+  margin: auto;
+
+}
+
+.xx{
+  display: none;
+}
+
+.bdr{
+  border: 2px solid black;
+}
+
+.width{
+  width: 50%;
+}
+
+img{
+  width: 500px;
+  height: auto;
+}
