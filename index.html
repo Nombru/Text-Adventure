@@ -10,51 +10,57 @@
   </head>
   <body>
 <!-- Start game (objective, backstory, “start game” button) -->
-    <div class="container start">
-      <h2>After traveling all day from a small villiage a few kilometers behind, you come across what looks to be the entrance to the dungeon you heard local myths of in tavern the night before. Could this be were you finally find the magical item you've been looking for?</h2>
+    <div class="container vh flex" class="mgn">
+      <div class="container start">
+        <h2>After traveling all day from a small villiage a few kilometers behind, you come across what looks to be the entrance to the dungeon you heard local myths of in tavern the night before. Could this be were you finally find the magical item you've been looking for?</h2>
 
-      <button type="submit" class="startButton" name="startButton">Start Your Adventure Into The Depths</button>
+        <button type="submit" class="startButton" name="startButton">Start Your Adventure Into The Depths</button>
+      </div>
     </div>
 
-<!-- Wake up (3 “door” options) -->
-    <div class="container wakeUp">
-      <h2>Given the disrepair when you first arrived, you would not have expected to find its in remarkable condition upon entering this almost forgotten place.</h2>
-      <h4>As you go further into this place, you hear a odd sound of something clicking and your lungs feel heavy, all of a sudden your falling into the darkness and no longer concious.</h4>
-      <h4>All of a sudden you wake up and find your self in a room you were not in before, how you got here you do not know but after getting your bearings and searching the room you find three possible ways to proceed...</h4>
 
-      <button type="submit" class="trapDoor" name="trapDoor">An old trapdoor in the floor</button>
-      <button type="submit" class="door" name="door">A ornate but rotting door.</button>
-      <button type="submit" class="rubble" name="rubble">A pile of rubble, which smells of clean air</button>
+<!-- Wake up (3 “door” options) -->
+    <div class="container vh flex" class="mgn">
+      <div class="container wakeUp">
+        <h2>Given the disrepair when you first arrived, you would not have expected to find its in remarkable condition upon entering this almost forgotten place.</h2>
+        <h4>As you go further into this place, you hear a odd sound of something clicking and your lungs feel heavy, all of a sudden your falling into the darkness and no longer concious.</h4>
+        <h4>All of a sudden you wake up and find your self in a room you were not in before, how you got here you do not know but after getting your bearings and searching the room you find three possible ways to proceed...</h4>
+
+        <button type="submit" class="trapDoor" name="trapDoor">An old trapdoor in the floor</button>
+        <button type="submit" class="door" name="door">A ornate but rotting door.</button>
+        <button type="submit" class="rubble" name="rubble">A pile of rubble, which smells of clean air</button>
+      </div>
     </div>
 
 <!-- You're dead #1 -->
-<div class="container">
-  <div class="dead1">
-    <h2>It's literally a trap!!!</h2>
-    Why did you go through a trap door? What were you thinking? I'm not sure you should bother trying again...
-    <p><button onclick=location=URL>Start a new game</button></p>
-  </div>
-</div>
+    <div class="container vh flex" class="mgn">
+      <div class="container">
+        <div class="dead1">
+          <h2>It's literally a trap!!!</h2>
+          Why did you go through a trap door? What were you thinking? I'm not sure you should bother trying again...
+          <p><button onclick=location=URL>Start a new game</button></p>
+        </div>
+      </div>
 
 <!-- // You're dead #2 (feast) -->
-<div class="container">
-  <div class="dead2">
-    <h2>You see... A feast!</h2>
-    <img src="https://media.giphy.com/media/yrBwdH8CD7K5q/giphy.gif" alt="spider">
-    You see an amazing feast, and find that you're pretty darn hungry. As you begin to eat the food, you realize there's no exit... but at least you'll die surrounded by your favorite foods!
-    <p><button onclick=location=URL>Start a new game</button></p>
-  </div>
-</div>
+    <div class="container">
+      <div class="dead2">
+        <h2>You see... A feast!</h2>
+        <img src="https://media.giphy.com/media/yrBwdH8CD7K5q/giphy.gif" alt="spider">
+        You see an amazing feast, and find that you're pretty darn hungry. As you begin to eat the food, you realize there's no exit... but at least you'll die surrounded by your favorite foods!
+        <p><button onclick=location=URL>Start a new game</button></p>
+      </div>
+    </div>
 
 <!-- // You're dead #3 (spider bite) -->
-<div class="container">
-  <div class="dead3">
-    <h2>There's a SPIDER!</h2>
-    <img src="https://media.giphy.com/media/rAbKGNGM99DBC/giphy.gif" alt="spider">
-    The itsy bitsy spider climbed up your arm and gave you a poisonous bite out of spite from the rain. YOU DED.
-    <p><button onclick=location=URL>Start a new game</button></p>
-  </div>
-</div>
+    <div class="container">
+      <div class="dead3">
+        <h2>There's a SPIDER!</h2>
+        <img src="https://media.giphy.com/media/rAbKGNGM99DBC/giphy.gif" alt="spider">
+        The itsy bitsy spider climbed up your arm and gave you a poisonous bite out of spite from the rain. YOU DED.
+        <p><button onclick=location=URL>Start a new game</button></p>
+      </div>
+    </div>
 
 <!-- #4 Death via avalanche - BG copy container details to each section -->
     <div class="container vh flex">
@@ -66,9 +72,9 @@
             New Game?
           </button>
         </div>
-
       </div>
     </div>
+
 <!--#5 Death via spike fall -->
     <div class="container xx">
 
