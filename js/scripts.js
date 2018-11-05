@@ -9,7 +9,7 @@ function kyleCorrect(){
 
 function kyleIncorrect(){
   $("#magicalKyle").hide();
-  $("#death2").show();
+  $("#death5").show();
 }
 
 function rockCorrect(){
@@ -31,7 +31,7 @@ function rockIncorrect2(){
 
 // user logic
 $(document).ready(function() {
-  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #death3, #death4, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
+  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
 
 // Move from start page to first part of adventure
 
@@ -121,7 +121,23 @@ $("#rockSubmit").click(function(event) {
 
   });
 
+  $("#tunnelButton1").click(function() {
+    console.log("go to skylight")
+    $("#tunnel").hide();
+    $("#skylightPage").show();
+  });
+
+  $("#tunnelButton2").click(function() {
+    console.log("go to death page")
+    $("#tunnel").hide();
+    $("#death6").show();
+  });
 
 
+  $(".newGame").click(function() {
+    console.log("new game?")
+    $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
+    $("#start").show();
+  });
 
 });
