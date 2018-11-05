@@ -13,7 +13,7 @@ function kyleIncorrect(){
 
 // user logic
 $(document).ready(function() {
-  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #death3, #gate").hide();
+  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #death3, #gate, #skylightPage").hide();
 
 // Move from start page to first part of adventure
 
@@ -63,6 +63,12 @@ $(".kyleForm").submit(function(event) {
     console.log("death 3")
     $("#gate").hide();
     $("#death3").show();
+  });
+
+  $("#gateButton2").click(function() {
+    console.log("go to skylight")
+    $("#gate").hide();
+    $("#skylightPage").show();
   });
 
 });
