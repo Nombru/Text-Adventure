@@ -12,4 +12,10 @@ $(document).ready(function() {
     $("#wakeUp").hide();
     $("#death1").show();
   });
+// Click on button for ornate door
+  $("#kyleDoor").click(function() {
+    console.log("ornate door button to Kyle")
+    $("#wakeUp, #death1").hide();
+    $("#magicalKyle").show();
+  });
 });
