@@ -1,5 +1,6 @@
 // biz logic
 var kyleInput;
+var rockInput;
 
 function kyleCorrect(){
   $("#magicalKyle").hide();
@@ -11,9 +12,26 @@ function kyleIncorrect(){
   $("#death2").show();
 }
 
+function rockCorrect(){
+  $("#looseRocks").hide();
+  $("#tunnel").show();
+}
+
+function rockIncorrect1(){
+  $("#looseRocks").hide();
+  $("#death3").show();
+}
+
+function rockIncorrect2(){
+  $("#looseRocks").hide();
+  $("#death4").show();
+}
+
+
+
 // user logic
 $(document).ready(function() {
-  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #death3, #gate, #skylightPage, #youEscape").hide();
+  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #death3, #death4, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
 
 // Move from start page to first part of adventure
 
@@ -78,5 +96,32 @@ $("#skylightButton1").click(function() {
   $("#skylightPage").hide();
   $("#youEscape").show();
 });
+
+//Escape option 2 leads to death
+$("#skylightButton2").click(function() {
+  console.log("go to death7")
+  $("#skylightPage").hide();
+  $("#death7").show();
+});
+
+//Smell what the rock is cooking.. its a tunnel
+$("#rockSubmit").click(function(event) {
+    event.preventDefault();
+
+    rockInput = $("input:radio[name=rock]:checked").val();
+    console.log(rockInput);
+
+    if (rockInput === "rock2"){
+      return rockCorrect();
+    } else if (rockInput === "rock1") {
+      return rockIncorrect1();
+    } else {
+      return rockIncorrect2();
+    }
+
+  });
+
+
+
 
 });

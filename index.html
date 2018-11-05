@@ -82,9 +82,29 @@
       </div>
     </div>
 
-    <div class="xx">
+<!-- You’re dead #7 (Death via fall) -->
+    <div class="container vh flex" id="death7">
+      <div class="mgn">
+
+        <h2>You trip and fall through a trap into a tunnel</h2>
+        <h4>Hitting a hard floor you get up brushing off the grime and dirt wincing as you try to get a better look at your surroundings.</h4>
+        <p>That's when you hear it.......</p>
+
+        <img src="https://i.imgur.com/zm6U58W.gif" alt="img of doges">
+
+        <div class="flex">
+          <button type="button" class="btn btn-danger mgn">
+            New Game?
+          </button>
+        </div>
+
+        <!-- This can be possibly animated based on time on the page and the asset we decide on can be brought into the field of view -->
+      </div>
+    </div>
+
+
 <!-- #4 Death via avalanche  -->
-    <div class="container vh flex">
+    <div class="container vh flex" id="death4">
       <div class="mgn">
         <img src="#" alt="">
         <h2>You died via <span id="reasonForDeath">"enter cause of death here"</span></h>
@@ -96,6 +116,7 @@
       </div>
     </div>
 
+  <div class="xx">
 <!--#5 Death via spike fall -->
     <div class="container vh flex">
       <div class="mgn">
@@ -124,16 +145,8 @@
       </div>
     </div>
 
-<!-- You’re dead #7 (Death via fall) -->
-    <div class="container vh flex">
-      <div class="mgn">
-        <h2>You've fallen into a trap.</h2>
-        <h4>Hitting a hard floor you get up brushing off the grime and dirt wincing as you try to get a better look at your surroundings.</h4>
-        <p>That's when you hear it.......</p>
-        <!-- This can be possibly animated based on time on the page and the asset we decide on can be brought into the field of view -->
-      </div>
-    </div>
   </div>
+
 <!-- Kyle (mystical creature) page (Math problem) -->
     <div class="container vh flex" id="magicalKyle">
       <div class="mgn">
@@ -170,36 +183,40 @@
 <!-- Loose Rocks -->
     <div class="container vh flex" id="looseRocks">
       <div class="mgn">
-        <div class="width flex">
-          <div class="mgn">
-            <img src="https://www.gobigrock.com/wp-content/uploads/2016/10/Fieldstone.png" alt="">
-          </div>
-        </div>
 
-        <div class="width flex">
-          <div class="mgn">
-            <form class="#">
+
+            <form class="rockRadio">
               <div class="radio">
+                <img src="https://i.giphy.com/media/TT7JW4Qm7uaNW/giphy.webp" alt="rock 1">
                 <label>
-                  <input type="radio" name="#" value="#">
+                  <input type="radio" name="rock" value="rock1">
                   Rock 1
                 </label>
               </div>
               <div class="radio">
+                <img src="https://i.giphy.com/media/5wFH11idPnpENpSZOi/giphy.webp" alt="rock 2">
                 <label>
-                  <input type="radio" name="#" value="#">
+                  <input type="radio" name="rock" value="rock2">
                   Rock 2
                 </label>
               </div>
               <div class="radio">
+                <img src="https://i.giphy.com/media/YG7kWyoHjsWd2/giphy.webp" alt="rock 3">
                 <label>
-                  <input type="radio" name="#" value="#">
+                  <input type="radio" name="rock" value="rock3">
                   Rock 3
                 </label>
               </div>
+
+              <div class="flex">
+                <button type="submit" class="btn btn-success mgn" id="rockSubmit">
+                  Submit your answer
+                </button>
+              </div>
+
             </form>
-          </div>
-        </div>
+
+
       </div>
     </div>
 
@@ -220,24 +237,24 @@
       </div>
     </div>
 
-<div class="xx">
+
 <!-- Tunnel -->
-    <div class="container vh flex">
+    <div class="container vh flex" id="tunnel">
       <div class="mgn">
-        <img src="#" alt="">
+        <img src="https://i.giphy.com/media/8L0y24IfVIegmd8y39/giphy.webp" alt="tunnel 1">
         <h2>There's a tunnel here!</h2>
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" id ="tunnelButton1">
           Tunnel 1
         </button>
 
-        <img src="#" alt="">
+        <img src="https://cdna.artstation.com/p/assets/images/images/006/315/366/large/taryn-meixner-dungeon-interior.jpg?1497628693" alt="tunnel 2">
         <h2>And a tunnel there!</h2>
-        <button type="button" class="btn btn-danger">
+        <button type="button" class="btn btn-danger" id ="tunnelButton2">
           Tunnel 2
         </button>
       </div>
     </div>
-</div>
+
 <!-- // Skylight -->
     <div class="container vh flex" id="skylightPage">
       <div class="mgn">
