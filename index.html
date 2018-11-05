@@ -14,8 +14,10 @@
       <div class="mgn">
         <div class="container start">
           <h2>After traveling all day from a small villiage a few kilometers behind, you come across what looks to be the entrance to the dungeon you heard local myths of in tavern the night before. Could this be were you finally find the magical item you've been looking for?</h2>
-
-          <button type="submit" class="startButton" name="startButton" id="startButton">Start Your Adventure Into The Depths</button>
+          <img src="https://i.giphy.com/media/3oz8xP3b0m0oC4lhbW/giphy.webp" alt="start game">
+          <div class="flex">
+            <button type="submit" class="startButton mgn" name="startButton" id="startButton">Start Your Adventure Into The Depths</button>
+          </div>
         </div>
       </div>
     </div>
@@ -52,8 +54,7 @@
     </div>
 
 <!-- // You're dead #2 (feast) -->
-    <div class="xx">
-    <div class="container vh flex">
+    <div class="container vh flex" id="death2">
       <div class="mgn">
         <h2>You see... A feast!</h2>
         <img src="https://media.giphy.com/media/yrBwdH8CD7K5q/giphy.gif" alt="spider">
@@ -66,6 +67,7 @@
       </div>
     </div>
 
+    <div class="xx">
 <!-- // You're dead #3 (spider bite) -->
     <div class="container vh flex">
       <div class="mgn">
@@ -143,15 +145,23 @@
           <h4>“When the day after tomorrow is yesterday, then today will be as far from Wednesday as today was from Wednesday when the day before yesterday was tomorrow. What day is today?”</h4>
 
           <!--Text Form-->
-                  <div class="form-group">
-                    <label for="riddleDate">Answer the Riddle.</label>
-                    <input type="text" class="form-control" id="fullname" placeholder="What day is today?">
-                  </div>
+            <form class="kyleForm">
+              <div class="form-group">
+                <label for="riddleDate">Answer the Riddle.</label>
+                <input type="text" class="form-control" id="day" placeholder="What day is today?">
+              </div>
+              <div class="flex">
+                <button type="submit" class="btn btn-success mgn">
+                  Submit your answer
+                </button>
+              </div>
+            </form>
+
           <!--Calender Form-->
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="riddleDate">What day is today?</label>
                     <input id="born" class="form-control" type="date">
-                  </div>
+                  </div> -->
         </div>
       </div>
     </div>
@@ -191,9 +201,9 @@
         </div>
       </div>
     </div>
-  <div class="xx">
+
 <!-- Gate -->
-    <div class="container vh flex">
+    <div class="container vh flex" id="gate">
       <div class="mgn">
         <img src="#" alt="">
         <h2>There's a gate here!</h2>
@@ -209,6 +219,7 @@
       </div>
     </div>
 
+<div class="xx">
 <!-- Tunnel -->
     <div class="container vh flex">
       <div class="mgn">
