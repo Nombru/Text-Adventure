@@ -8,12 +8,12 @@ function kyleCorrect(){
 
 function kyleIncorrect(){
   $("#magicalKyle").hide();
-  $("#dead2").show();
+  $("#death2").show();
 }
 
 // user logic
 $(document).ready(function() {
-  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #gate").hide();
+  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death2, #death3, #gate").hide();
 
 // Move from start page to first part of adventure
 
@@ -26,20 +26,20 @@ $(document).ready(function() {
 // Click on trapdoor button and died
   $("#trapDoor").click(function() {
     console.log("trap door button")
-    $("#wakeUp, #looseRocks, #magicalKyle, #death2, #gate").hide();
+    $("#wakeUp").hide();
     $("#death1").show();
   });
 // Click on button for ornate door
   $("#kyleDoor").click(function() {
     console.log("ornate door button to Kyle")
-    $("#wakeUp, #death1, #looseRocks").hide();
+    $("#wakeUp").hide();
     $("#magicalKyle").show();
   });
 
 // Click on button for rubbleDoor
   $("#rubbleDoor").click(function() {
     console.log("rubble door")
-    $("#wakeUp, #death1, #magicalKyle").hide();
+    $("#wakeUp").hide();
     $("#looseRocks").show();
   });
 
@@ -50,11 +50,19 @@ $(".kyleForm").submit(function(event) {
     kyleInput = $("input#day").val();
     console.log(kyleInput);
 
-    if (kyleInput = "wednesday"){
+    if (kyleInput === "wednesday" || kyleInput === "Wednesday"){
       return kyleCorrect();
     } else {
       return kyleIncorrect();
     }
 
   });
+
+//Gate button 1 leads to death3
+  $("#gateButton1").click(function() {
+    console.log("death 3")
+    $("#gate").hide();
+    $("#death3").show();
+  });
+
 });
