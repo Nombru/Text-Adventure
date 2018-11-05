@@ -27,6 +27,10 @@ function rockIncorrect2(){
   $("#death4").show();
 }
 
+function resetFields() {
+  $("input#day").val("");
+  $("input[name=rock]").prop('checked', false);
+}
 
 
 // user logic
@@ -138,6 +142,7 @@ $("#rockSubmit").click(function(event) {
     console.log("new game?")
     $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
     $("#start").show();
+    resetFields();
   });
 
 });
