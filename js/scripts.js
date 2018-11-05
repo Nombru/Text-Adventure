@@ -18,4 +18,11 @@ $(document).ready(function() {
     $("#wakeUp, #death1").hide();
     $("#magicalKyle").show();
   });
+
+// Click on button for rubbleDoor
+  $("#rubbleDoor").click(function() {
+    console.log("rubble door")
+    $("#wakeUp, #death1, #magicalKyle").hide();
+    $("#looseRocks").show();
+  });
 });
