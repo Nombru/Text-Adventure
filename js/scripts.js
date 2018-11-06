@@ -1,6 +1,20 @@
 // biz logic
+
+function Player (name){
+    this.name = name;
+    this.attempt = 0;
+}
+
+var user = new Player("Jentry");
+
+Player.prototype.attemptCount = function(){
+  return this.attempt += 1;
+}
+
+
 var kyleInput;
 var rockInput;
+
 
 function kyleCorrect(){
   $("#magicalKyle").hide();
@@ -35,6 +49,8 @@ function resetFields() {
 
 // user logic
 $(document).ready(function() {
+
+
   $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
 
 // Move from start page to first part of adventure
@@ -140,9 +156,12 @@ $("#rockSubmit").click(function(event) {
 
   $(".newGame").click(function() {
     console.log("new game?")
+    user.attemptCount();
     $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
     $("#start").show();
     resetFields();
   });
+
+  console.log(user);
 
 });
