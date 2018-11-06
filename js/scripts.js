@@ -50,7 +50,8 @@ function resetFields() {
 // user logic
 $(document).ready(function() {
 
-
+  $(".userInfo").text(" " + user.name);
+  $(".userTry").text(" " + user.attempt);
   $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
 
 // Move from start page to first part of adventure
@@ -157,8 +158,14 @@ $("#rockSubmit").click(function(event) {
   $(".newGame").click(function() {
     console.log("new game?")
     user.attemptCount();
+
+    $(".userTry").text(" " + user.attempt);
+
     $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
     $("#start").show();
+
+
+
     resetFields();
   });
 
