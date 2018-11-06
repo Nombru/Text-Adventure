@@ -3,7 +3,11 @@
 }
 
 .vh{
-  height: 100vh;
+  height: 90vh;
+}
+
+.vh2{
+  height: 10vh;
 }
 
 .flex{
@@ -27,6 +31,10 @@
   width: 50%;
 }
 
+.scorePadding {
+  padding: 50px;
+}
+
 h2{
   text-align: center;
 }
@@ -35,6 +43,37 @@ img{
   width: 500px;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
+
+.portrait{
+  /* border: 4px solid red; */
+  height: 500px;
+  width: auto;
+}
+
+.landscape{
+  width: 200px;
+  height: auto;
+}
+
+body{
+  background-color: #000000;
+}
+
+.mgn2{
+  margin-top: 25px;
+}
+
+
+p, h3, h4, h2, label {
+ color: #7F7F7F;
+}
+
+.ta{
+  text-align: center;
+}
+
+/* button {
+  margin-top:25px;
+} */

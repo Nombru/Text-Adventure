@@ -9,9 +9,16 @@
     <title>Text-Adventure</title>
   </head>
   <body>
+
+<!-- Welcome Page -->
+<div class="container flex welcomePageClass">
+  <img src="img/welcome-page.png" id="welcomePage" alt="welcome image">
+
+</div>
+
 <!-- Start game (objective, backstory, “start game” button) -->
 
-<div class="container">
+<div class="container vh2 scorePadding">
   <p>Name:<span class="userInfo"></span></p>
   <p>Number of Attempts:<span class="userTry"></span></p>
 </div>
@@ -22,7 +29,7 @@
         <div class="container start">
           <h2>After traveling all day from a small villiage a few kilometers away, you come across what looks to be the entrance to a dungeon. You heard local myths about this dungeon in the tavern the last night. Could this be where you finally find the magical item you've been looking for?</h2>
           <img src="https://i.giphy.com/media/3oz8xP3b0m0oC4lhbW/giphy.webp" alt="start game">
-          <div class="flex">
+          <div class="flex mgn2">
             <button type="submit" class="startButton mgn" name="startButton" id="startButton">Start Your Adventure Into The Depths</button>
           </div>
         </div>
@@ -38,9 +45,9 @@
           <h4>Upon entering this almost forgotten place, you hear a odd sound of something clicking and your lungs feel heavy... All of a sudden you are falling into the darkness and no longer conscious.</h4>
           <h4>All of a sudden you wake up and find yourself in a room you were not in before! How you got here, you do not know- but after getting your bearings and searching the room, you find three possible ways to proceed...</h4>
 
-          <button type="submit" class="trapDoor" name="trapDoor" id="trapDoor">An old trapdoor in the floor</button>
-          <button type="submit" class="door" name="door" id="kyleDoor">A ornate but rotting door</button>
-          <button type="submit" class="rubble" name="rubble" id="rubbleDoor">A pile of rubble, which smells of clean air</button>
+          <button type="submit" class="trapDoor mgn2" name="trapDoor" id="trapDoor">An old trapdoor in the floor</button>
+          <button type="submit" class="door mgn2" name="door" id="kyleDoor">A ornate but rotting door</button>
+          <button type="submit" class="rubble mgn2" name="rubble" id="rubbleDoor">A pile of rubble, which smells of clean air</button>
         </div>
       </div>
     </div>
@@ -52,7 +59,7 @@
           <h2>It's literally a trap!!!</h2>
           <img src="https://media.giphy.com/media/xT9DPijatpRnZkq4so/giphy.gif" alt="person falling into the abyss">
           <h4>Why did you go through a trap door? What were you thinking? I'm not sure you should bother trying again...</h4>
-          <div class="flex">
+          <div class="flex mgn2">
             <button type="button" class="btn btn-danger mgn newGame">
               New Game?
             </button>
@@ -68,7 +75,7 @@
         <h2>You see... A feast!</h2>
         <img src="https://media.giphy.com/media/yrBwdH8CD7K5q/giphy.gif" alt="spider">
         <h4>You see an amazing feast, and find that you're pretty darn hungry. As you begin to eat the food, you realize there's no exit... but at least you'll die surrounded by your favorite foods!</h4>
-        <div class="flex">
+        <div class="flex mgn2">
           <button type="button" class="btn btn-danger mgn newGame">
             New Game?
           </button>
@@ -83,7 +90,7 @@
         <h2>There's a SPIDER!</h2>
         <img src="https://media.giphy.com/media/rAbKGNGM99DBC/giphy.gif" alt="spider">
         <h4>The itsy bitsy spider climbed up your arm and gave you a poisonous bite out of spite from the rain. YOU DED.</h4>
-        <div class="flex">
+        <div class="flex mgn2">
           <button type="button" class="btn btn-danger mgn newGame">
             New Game?
           </button>
@@ -101,7 +108,7 @@
 
         <img src="https://i.imgur.com/zm6U58W.gif" alt="img of doges">
 
-        <div class="flex">
+        <div class="flex mgn2">
           <button type="button" class="btn btn-danger mgn newGame">
             New Game?
           </button>
@@ -116,7 +123,7 @@
       <div class="mgn">
         <img src="https://orig00.deviantart.net/e6c6/f/2018/221/f/2/rock_animation_by_albertov-dcjnhqh.gif" alt="death by the rock">
         <h2>Why did you choose THAT rock? Unfortunately, you've triggered a major avalanche of rocks, bricks, and debris. And you are crushed and die under the rocks. Bummer.</h2>
-        <div class="flex">
+        <div class="flex mgn2">
           <button type="button" class="btn btn-danger mgn newGame">
             New Game?
           </button>
@@ -131,7 +138,7 @@
         <h2>A spike has striken you! Yikes!</h2>
         <h4>It looks like Death made a personal visit with his scythe!</h4>
 
-        <div class="flex">
+        <div class="flex mgn2">
           <button type="button" class="btn btn-danger mgn newGame">
             New Game?
           </button>
@@ -145,7 +152,7 @@
         <img src="https://media.giphy.com/media/l0HlUORHtAfSfC54Q/giphy.gif" alt="nasty air">
         <h2>Death via CO2 poisoning!</h2>
         <h4>You start to feel dizzy, and it turns out you've entered a cavern of death. Bye!</h4>
-        <div class="flex">
+        <div class="flex mgn2">
           <button type="button" class="btn btn-danger mgn newGame">
             New Game?
           </button>
@@ -160,7 +167,7 @@
           <h2>Choosing the ornate door, you open it to find a plain looking room with a gate on the far side. As you walk into the room you see a shape start moving in the shadows...</h2>
 
           <h3>Moving into the light shining from the roof of the room, you see before you a wraith shimmering in and out of focus. In a deep etheral tone it asks you the following.......</h3>
-          <img src="img/kyle.jpg" alt="kyle wizard">
+          <img src="img/kyle.jpg" class="portrait" alt="kyle wizard">
 
           <h2>“When the day after tomorrow is yesterday, then today will be as far from Wednesday as today was from Wednesday when the day before yesterday was tomorrow. What day is today?”</h2>
 
@@ -170,13 +177,13 @@
                 <label for="riddleDate">Answer the Riddle.</label>
                 <input type="text" class="form-control" id="day" placeholder="What day is today?">
               </div>
-              <div class="flex">
+              <div class="flex mgn2">
                 <button type="submit" class="btn btn-success mgn">
                   Answer the Riddle
                 </button>
               </div>
             </form>
-
+<!-- Decided this was uneeded for the project -->
           <!--Calender Form-->
                   <!-- <div class="form-group">
                     <label for="riddleDate">What day is today?</label>
@@ -192,31 +199,40 @@
 
 
             <form class="rockRadio">
-              <div class="radio">
+
                 <h2>Pile of Rocks</h2>
                 <h4>You've decided to try and sort out which Rock to move that will hopefully take you to freedom. Which Rock do you choose?</h4>
-                <img src="https://i.giphy.com/media/TT7JW4Qm7uaNW/giphy.webp" alt="rock 1">
-                <label>
-                  <input type="radio" name="rock" value="rock1">
-                  "The Rock" Smelling
-                </label>
-              </div>
-              <div class="radio">
-                <img src="https://i.giphy.com/media/5wFH11idPnpENpSZOi/giphy.webp" alt="rock 2">
-                <label>
-                  <input type="radio" name="rock" value="rock2">
-                  "The Rock"-slam
-                </label>
-              </div>
-              <div class="radio">
-                <img src="https://i.giphy.com/media/YG7kWyoHjsWd2/giphy.webp" alt="rock 3">
-                <label>
-                  <input type="radio" name="rock" value="rock3">
-                  Stoic "The Rock"
-                </label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="radio">
+                      <img src="https://i.giphy.com/media/TT7JW4Qm7uaNW/giphy.webp" alt="rock 1" class="landscape">
+                      <label>
+                        <input type="radio" name="rock" value="rock1">
+                        "The Rock" Smelling
+                      </label>
+                    </div>
+                  </div>
+                <div class="radio">
+                  <div class="col-md-4">
+                    <img src="https://i.giphy.com/media/5wFH11idPnpENpSZOi/giphy.webp" alt="rock 2" class="landscape">
+                    <label>
+                      <input type="radio" name="rock" value="rock2">
+                      "The Rock"-slam
+                    </label>
+                  </div>
+                </div>
+                <div class="radio">
+                  <div class="col-md-4">
+                    <img src="https://i.giphy.com/media/YG7kWyoHjsWd2/giphy.webp" alt="rock 3" class="landscape">
+                    <label>
+                      <input type="radio" name="rock" value="rock3">
+                      Stoic "The Rock"
+                    </label>
+                  </div>
+                </div>
               </div>
 
-              <div class="flex">
+              <div class="flex mgn2">
                 <button type="submit" class="btn btn-success mgn" id="rockSubmit">
                   Submit "The Rock" of your choice
                 </button>
@@ -267,19 +283,33 @@
       <div class="mgn">
         <div class="skylight">
           <h2>Skylight</h2>
-          <img src="https://cdnb.artstation.com/p/assets/images/images/010/962/147/large/beyond-3d-5.jpg?1527150584" alt="Skylight">
-          <h4>After doing a little jig to celebrate your success, you toss back your head to let out a boundless laugh and notice... a beautiful stained glass skylight window! Are you willing to break it to escape?</h4>
-          <div class="flex">
-            <h2>Jump through the beautiful stained glass window...</h2>
-            <p><button type="button" class="btn btn-primary" id="skylightButton1">
-              Take a chance
-            </button></p>
+          <img src="img/skylightroom.png" alt="Skylight">
+          <h4 class="ta">You've come across the throne room... and while you cannot find the magical item, you've found a case of Old Toby (legend amongst the local town-folk) and add it to your inventory. <br><br> After doing a little jig to celebrate your success, you toss back your head to let out a boundless laugh and notice... a beautiful stained glass skylight window! Are you willing to break it to escape?</h4>
 
-            <img src="#" alt="">
-            <h2>Grab a giant candlestick to use as a weapon, since it looks like you have to go back the way you came.</h2>
-            <button type="button" class="btn btn-danger" id="skylightButton2">
-              Grab giant candlestick
-            </button>
+          <div class="container flex">
+
+            <div class="mgn width">
+              <h3 class="ta">Jump through the beautiful stained glass window...</h3>
+
+              <div class="flex mgn2">
+              <button type="button" class="btn btn-primary mgn" id="skylightButton1">
+                Take a chance
+              </button>
+              </div>
+            </div>
+
+
+            <div class="mgn width">
+              <h3 class="ta">Grab a giant candlestick to use as a weapon, since it looks like you have to go back the way you came.</h3>
+
+              <div class="flex mgn2">
+                <button type="button" class="btn btn-danger mgn" id="skylightButton2">
+                  Grab giant candlestick
+                </button>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </div>
@@ -291,8 +321,8 @@
         <div class="youwin">
           <h2>You Win!</h2>
           <img src="https://i.giphy.com/media/mRwvEhDH8IIq4/giphy.webp" alt="you win!">
-          <h4>Time stands still for 5 seconds as you drop a mere 5 feet. After brushing off the pieces of beautiful broken glass from your daring escape, it's time to take stock of what a magnificent beast you are! You have succeeded in escaping the terrible terrible dungeon. It is now night time, and you are greeted by a friendly-looking and well-seasoned wizard. He leads you over to his campfire and offers to hear about your tale. He doesn't have that magical item you were looking for, but he does hand you some food: A BURRITO!</h4>
-          <div class="flex">
+          <h4>Time stands still for 5 seconds as you drop a mere 5 feet. After brushing off the pieces of beautiful broken glass from your daring escape, it's time to take stock of what a magnificent beast you are! You have succeeded in escaping the terrible terrible dungeon. <br> <br> It is now night time, and you are greeted by a friendly-looking and well-seasoned wizard. He leads you over to his campfire and offers to hear about your tale. <br> <br> He doesn't have that magical item you were looking for either, but he does want to share in your Old Toby and thanks you with some food; A BURRITO!</h4>
+          <div class="flex mgn2">
             <button type="button" class="btn btn-danger mgn newGame">
               New Game?
             </button>

@@ -1,19 +1,20 @@
 // biz logic
 
+Player.prototype.attemptCount = function(){
+  return this.attempt += 1;
+}
+
+var userName;
+var kyleInput;
+var rockInput;
+
 function Player (name){
     this.name = name;
     this.attempt = 0;
 }
 
-var user = new Player("Jentry");
 
-Player.prototype.attemptCount = function(){
-  return this.attempt += 1;
-}
-
-
-var kyleInput;
-var rockInput;
+var user = new Player(name);
 
 
 function kyleCorrect(){
@@ -50,9 +51,17 @@ function resetFields() {
 // user logic
 $(document).ready(function() {
 
-  $(".userInfo").text(" " + user.name);
-  $(".userTry").text(" " + user.attempt);
-  $("#wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
+  $(".scorePadding, #start, #wakeUp, #looseRocks, #magicalKyle, #death1, #death3, #death4, #death5, #death6, #death7, #gate, #skylightPage, #youEscape, #tunnel").hide();
+
+  $("#welcomePage").click(function() {
+    user.name = prompt("What's your name?","your name here");
+    $(".welcomePageClass").hide();
+    $("#start").show();
+    $(".userInfo").text(" " + user.name);
+    $(".userTry").text(" " + user.attempt);
+    $(".scorePadding").show();
+    console.log(user);
+  });
 
 // Move from start page to first part of adventure
 
@@ -167,8 +176,10 @@ $("#rockSubmit").click(function(event) {
 
 
     resetFields();
+
+
   });
 
-  console.log(user);
+
 
 });
